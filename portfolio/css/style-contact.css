@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'calibri', sans-serif;;
+}
+
+/* Debut - Menu */
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100px; 
+    background-color: white ;
+    z-index: 2;
+}
+
+nav ul {    
+    display: flex;   
+}
+
+li a img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav .navM a {
+    position: relative;
+    top: 35%;
+    color: black;
+    margin: auto; 
+}
+
+nav li {
+    text-align: center;
+    font-size: 18px;
+    margin: auto; 
+    width: 20%;
+    height: 100px
+}
+
+nav .navM a:hover {   
+    transition-delay: 100ms;
+    border-bottom: 1px solid black;   
+}
+
+/* Fin - Menu */
+
+.main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+/* Debut - Partie gauche */
+
+.gauche {
+    margin-top: 100px;
+    width: 50%;
+    height: auto;
+    background-color: #e6e6e6;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.gauche img {
+    width: 78%;
+    height: auto;
+    padding-top: 2%;
+}
+
+/* Fin - Partie gauche */
+
+/* Debut - Partie droite */
+
+.droite {
+    border-top: 2px solid black;
+    margin-top: 100px;
+    width: 50%;
+    height: auto;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.titre h2 {
+    margin-top: 3%;
+    font-size: 300%;
+}
+
+/* Debut - formulaire */ 
+
+.formulaire {
+    padding-top: 8%;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+.formulaire label {
+   display: inline-block;
+   width: 25%;
+   margin-right: 5%;
+   vertical-align: top;
+   text-align: right;
+}
+
+.champ1 input, textarea {
+    display: inline-block;
+    width: 35%;
+    padding: 1%;
+    vertical-align: top;
+}
+
+.boutton {
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    width: 20%;
+}
+
+.boutton input {
+    width: 100%;
+}
+
+/* Fin - formulaire */
+
+
+.droite-bas {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.droite-bas a {
+    color: black;
+}
+
+/* Debut - mail */ 
+
+.mail {
+    display: inline-block;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+}
+
+.mail h3 {
+    margin: auto;
+    font-size: 100%;
+    padding-top: 5%;
+
+}
+
+.mail img {
+    width: 6%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Fin - mail */ 
+
+/* Debut - insta */
+
+.insta {
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.insta h3{
+    margin: auto;
+    font-size: 100%;
+}
+
+.insta img {
+    width: 10%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Fin - insta */
+
+/* Debut - linkedin */
+
+.linkedin {
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.linkedin h3 {
+    margin: auto;
+    font-size: 100%;
+}
+
+.linkedin img {
+    width: 10%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Fin - linkedin */
+
+/* Fin - Partie droite */
+
+

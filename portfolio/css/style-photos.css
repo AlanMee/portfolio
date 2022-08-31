@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Debut - Menu */
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100px; 
+    background-color: white ;
+    z-index: 2;
+}
+
+nav ul {    
+    display: flex;   
+}
+
+li a img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav .navM a {
+    position: relative;
+    top: 35%;
+    color: black;
+    margin: auto; 
+}
+
+nav li {
+    text-align: center;
+    font-size: 18px;
+    margin: auto; 
+    width: 20%;
+    height: 100px
+}
+
+nav .navM a:hover {   
+    transition-delay: 100ms;
+    border-bottom: 1px solid black;   
+}
+
+/* Fin - Menu */
+
+.main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+body{
+    font-family: 'calibri', sans-serif;
+}
+
+/* Debut - Presentation page haut */ 
+
+.haut-main {
+    margin-top: 100px;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    text-align: center;   
+}
+
+.haut-main .titre {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    font-size: 60px;
+    color: white;
+}
+
+/* Fin - Presentation page haut */
+
+/* Debut - Presentation appareil photo */
+
+.appareil {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+pa= photo appareil 
+ta= texte appareil
+ipa= image photo appareil
+*/
+
+.appareil .pa {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.appareil .pa img {
+    transition: 100ms;
+    width: 75%;
+}
+
+.appareil .pa img:hover {
+    width: 80%;
+    margin-top: -5%;
+}
+
+.appareil .ta {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.appareil .ta h3 {
+    padding-top: 10%;
+    font-size: 30px;
+}
+
+.appareil .ta p {
+    font-size: 16px;
+    padding: 2%;
+}
+
+/* Fin - Presentation appareil photo */
+
+/* Debut - Presentation objectif photo */
+
+.objectif {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+to= texte objectif
+po= photo objectif
+*/
+
+.objectif .to {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.objectif .po {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.objectif .to h3 {
+    padding-top: 10%;
+    font-size: 30px;
+}
+
+.objectif .to p {
+    font-size: 16px;
+    padding: 2%;
+}
+
+.objectif .po img {
+    transition: 100ms;
+    width: 75%;
+}
+
+.objectif .po img:hover {
+    width: 80%;
+    margin-top: -5%;
+}
+
+/* Fin - Presentation objectif photo */
+
+/* Debut - Presentation retouche photo */
+
+.retouche {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.retouche .tr {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.retouche .pr {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.retouche .tr h3 {
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.retouche .tr p {
+    font-size: 16px;
+    padding: 2%;
+}
+
+.retouche .pr img {
+    transition: 100ms;
+    width: 75%;
+    margin-top: 15%;
+}
+
+.retouche .pr img:hover {
+    width: 80%;
+    margin-top: 10%;
+}
+
+/* Fin - Presentation retouche photo */
+
+.t-travail {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    text-align: center;  
+}
+
+.t-travail h1 {
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top: 30%;
+    font-size: 120px;
+}
+
+.photo-global {
+    width: 100%;
+    height: auto;
+    background-color: white;  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.l1 {
+    width: 80%;
+    height: 30vh;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Debut - Photo 1 */
+
+.p1 {
+    width: 25%;
+    height: 100%;    
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.p1 p {
+    position:relative;
+    top: -80%;
+    left: 0%;
+    opacity: 0;
+    margin: auto;
+}
+
+.p1 img {
+    transition: 100ms;
+    padding-top: 6%;
+    width: 90%;
+}
+
+.p1:hover img{
+    transition: 300ms;
+    padding-top: 2%;
+    width: 100%;
+    filter: blur(4px);
+}
+
+.p1:hover p {
+    transition: 1s;
+    opacity: 1;
+    position: relative;
+    top: -60%;
+    left: 0%;
+    margin: auto;
+}
+
+/* Fin - Photo 1 */
+
+/* Debut - Photo 2 */
+
+.p2 {
+    width: 25%;
+    height: 100%;    
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.p2 p {
+    position:relative;
+    top: -80%;
+    left: 0%;
+    opacity: 0;
+    margin: auto;
+}
+
+.p2 img {
+    transition: 100ms;
+    padding-top: 6%;
+    width: 90%;
+}
+
+.p2:hover img{
+    transition: 300ms;
+    padding-top: 2%;
+    width: 100%;
+    filter: blur(4px);
+}
+
+.p2:hover p {
+    transition: 1s;
+    opacity: 1;
+    position: relative;
+    top: -60%;
+    left: 0%;
+    margin: auto;
+}
+
+/* Fin - Photo 2 */
+
+/* Debut - Photo 3 */
+
+.p3 {
+    width: 25%;
+    height: 100%;    
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.p3 p {
+    position:relative;
+    top: -80%;
+    left: 0%;
+    opacity: 0;
+    margin: auto;
+}
+
+.p3 img {
+    transition: 100ms;
+    padding-top: 6%;
+    width: 90%;
+}
+
+.p3:hover img{
+    transition: 300ms;
+    padding-top: 2%;
+    width: 100%;
+    filter: blur(4px);
+}
+
+.p3:hover p {
+    transition: 1s;
+    opacity: 1;
+    position: relative;
+    top: -60%;
+    left: 0%;
+    margin: auto;
+}
+
+/* Fin - Photo 3 */
+
+/* Debut - Photo 4 */
+
+.p4 {
+    width: 25%;
+    height: 100%;    
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.p4 p {
+    position:relative;
+    top: -80%;
+    left: 0%;
+    opacity: 0;
+    margin: auto;
+}
+
+.p4 img {
+    transition: 100ms;
+    padding-top: 6%;
+    width: 90%;
+}
+
+.p4:hover img{
+    transition: 300ms;
+    padding-top: 2%;
+    width: 100%;
+    filter: blur(4px);
+}
+
+.p4:hover p {
+    transition: 1s;
+    opacity: 1;
+    position: relative;
+    top: -60%;
+    left: 0%;
+    margin: auto;
+}
+
+/* Fin - Photo 4 */
+
+.l2 {
+    width: 80%;
+    height: 30vh;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.l2 h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+}
+
+/* Debut - Contacter */
+
+.contacter {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contacter h5 {
+    padding-top: 1.5%;
+}
+
+.contacter a {
+    color: white;
+}
+
+.contacter a:hover {
+    color: #e6e6e6;
+}
+
+/* Fin - Contacter */
+

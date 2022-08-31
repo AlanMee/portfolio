@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Debut - Menu */
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100px; 
+    background-color: white ;
+    z-index: 2;
+}
+
+nav ul {    
+    display: flex;   
+}
+
+li a img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav .navM a {
+    position: relative;
+    top: 35%;
+    color: black;
+    margin: auto; 
+}
+
+nav li {
+    text-align: center;
+    font-size: 18px;
+    margin: auto; 
+    width: 20%;
+    height: 100px
+}
+
+nav .navM a:hover {   
+    transition-delay: 100ms;
+    border-bottom: 1px solid black;   
+}
+/* Fin - Menu */
+
+.main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+body{
+    background-color: blue;
+    font-family: 'calibri', sans-serif;;
+}
+
+/* Debut - Partie de gauche */
+
+.gauche {
+    padding-top: 100px;
+    background-color: black;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+}
+
+.gauche .presentation {
+    width: 94%;
+    height: auto;
+    margin: auto;
+    color: white;
+}
+
+.gauche .presentation h2 {
+    font-size: 60px;
+    margin-top: 30%;
+}
+
+.gauche .presentation h5 {
+    font-size: 20px;
+}
+
+.gauche .presentation h4 {
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.gauche .presentation a {
+    color: white;
+}
+
+.gauche .presentation a:hover {
+    transition: 0.5s;
+    border-bottom: 1px solid white;
+}
+
+.gauche .presentation .ordi {    
+    width: 28%;
+    height: auto;
+}
+
+.gauche .ordi img {
+    width: 100%;
+}
+
+/* Fin - Partie de gauche */
+
+/* Debut - Partie de droite */ 
+
+/* Debut - titre + photo */
+
+.droite {
+    background-color: #EEEEEE;
+    color: #0F044C;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.droite .haut {
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+.droite .titre {
+    padding-top: 2%;
+    border-bottom: 2px solid black;
+    width: 16%;    
+    margin: auto;
+}
+
+.droite .ap {
+    width: 20%;   
+    margin: auto;
+}
+
+.droite .haut img {
+    width: 8%;
+}
+
+/* Fin - titre + photo */
+
+/* Debut - Positionnement image - Partie droite */
+
+.droite .photo {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.droite .photo .i1 { 
+    width: 45%;
+    height: 30vh;
+    padding-top: 1%;
+    margin: auto;
+}
+
+.droite .photo .i1 img {   
+    transition-duration: 300ms; 
+    width: 90%;
+}
+
+.droite .photo .i1 img:hover {   
+    width: 95%;
+}
+
+.droite .photo .i2 {
+    width: 45%;
+    height: 30vh;    
+    padding-top: 1%;
+    margin: auto;
+}
+
+.droite .photo .i2 img {
+    transition-duration: 300ms; 
+    width: 90%;
+}
+
+.droite .photo .i2 img:hover {
+    width: 95%;
+}
+
+.droite .photo .i3 {   
+    width: 45%;
+    height: 30vh;   
+    padding-top: 1%;
+    margin: auto;
+}
+
+.droite .photo .i3 img {
+    transition-duration: 300ms; 
+    width: 90%;
+}
+
+.droite .photo .i3 img:hover {
+    width: 95%;
+}
+
+.droite .photo .i4 {
+    width: 45%;
+    height: 30vh;
+    padding-top: 1%;
+    margin: auto;
+}
+
+.droite .photo .i4 img {
+    transition-duration: 300ms; 
+    width: 90%;
+}
+
+.droite .photo .i4 img:hover {
+    width: 95%;
+}
+
+/* Fin - Positionnement image - Partie droite */
+
+.droite .savoir {
+    margin: auto;
+    width: 20%;
+    padding: 2%;
+}
+
+.droite .savoir a { 
+    width: 100%;
+    transition-duration: 300ms; 
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3%;
+    font-size: 16px;
+}
+
+.droite .savoir a:hover {
+    transition-duration: 300ms; 
+    font-size: 18px;
+}
+
+/* Fin - Partie de droite */ 
+
+

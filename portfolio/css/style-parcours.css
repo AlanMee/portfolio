@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'calibri', sans-serif;;
+}
+
+/* Debut - Menu */
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100px; 
+    background-color: white ;
+    z-index: 2;
+}
+
+nav ul {    
+    display: flex;   
+}
+
+li a img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav .navM a {
+    position: relative;
+    top: 35%;
+    color: black;
+    margin: auto; 
+}
+
+nav li {
+    text-align: center;
+    font-size: 18px;
+    margin: auto; 
+    width: 20%;
+    height: 100px
+}
+
+nav .navM a:hover {   
+    transition-delay: 100ms;
+    border-bottom: 1px solid black;   
+}
+
+/* Fin - Menu */
+
+/* Debut - Positionnement main */
+
+.main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* Fin - Positionnement main */
+
+/* Debut - Titre parcours */ 
+
+.t-presentation {    
+    margin-top: 100px;
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    color: white;
+    text-align: center;    
+}
+
+.t-presentation h2 {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    margin-top: 4%;
+}
+
+/* Fin - Titre parcours */
+
+.etudes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Debut - bac */ 
+
+.bac {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: greenyellow;
+}
+
+.bac-i {
+    width: 40%;
+    height: auto;
+    background-color: white;    
+    text-align: center;
+}
+
+.bac-i img {
+    transition: 50ms;
+    margin-top: 9%;
+    width: 75%;
+    height: auto;
+}
+
+.bac-i img:hover {
+    transition: 150ms;
+    margin-top: 8%;
+    width: 80%;
+}
+
+.bac-t {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.bac-t h3 { 
+    margin-top: 20%;
+}
+
+.bac-t p {
+    margin: auto;
+    width:80%;
+}
+
+/* Fin - bac */
+
+/* Debut - bts */
+
+.bts {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.bts-t {
+    width: 60%;
+    height: auto;
+    text-align: center;    
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.bts-t h3 { 
+    margin-top: 20%;
+}
+
+.bts-i {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.bts-i img {
+    transition: 50ms;
+    width: 75%;
+    margin-top: 12%;
+}
+
+.bts-i img:hover {
+    transition: 150ms;
+    width: 80%;
+    margin-top: 10%;
+}
+
+.bts-t p {
+    margin: auto;
+    width:80%;
+}
+
+/* Fin - bts */
+
+/* Debut - Titre projet */
+
+.t-projet {
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.t-projet h2 {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Fin - Titre projet */
+
+.projet-main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: steelblue;
+    text-align: center;
+}
+
+/* Debut - Ligne 1 */
+
+.l1 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Debut - Projet 1 */ 
+
+.p1 {
+    width: 25%;
+    height: 100%;
+    background-color: #e6e6e6;
+}
+
+.p1 a {
+    color: black;
+}
+
+.p1 h4 {
+    opacity: 0;
+}
+
+.p1 p {
+    width: 80%;
+    margin: auto;
+    padding-top: 1%;
+}
+
+.p1 h3 {
+    transition: 0.5s;
+    padding-top: 16%;
+}
+
+.p1:hover h3 {
+    transition: 1s;
+    padding-top: 10% ;
+}
+
+.p1:hover h4 {
+    padding-top: 3%;
+    transition: 1.5s;
+    opacity: 1;
+}
+
+.p1:hover h4:hover a {
+    transition: 50ms;
+    color: #737373;
+}
+
+/* Fin - Projet 1 */
+
+/* Debut - Projet 2 */
+
+.p2 {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+
+.p2 a {
+    color: black;
+}
+
+.p2 p {
+    width: 80%;
+    margin: auto;
+    padding-top: 1%;
+}
+
+.p2 h3 {
+    transition: 0.5s;
+    padding-top: 16%;
+}
+
+.p2 h4 {
+    opacity: 0;
+}
+
+.p2:hover h3 {
+    transition: 1s;
+    padding-top: 10%;
+}
+
+.p2:hover h4 {
+    transition: 1.5s;
+    opacity: 1;
+    padding-top: 3%;
+}
+
+.p2:hover h4:hover a {
+    transition: 50ms;
+    color: #737373;
+}
+
+/* Fin - Projet 2 */
+
+/* Debut - Projet 3 */
+
+.p3 {
+    width: 25%;
+    height: 100%;
+    background-color:#e6e6e6ed;
+}
+
+.p3 a {
+    color: black;
+}
+
+.p3 p {
+    width: 80%;
+    margin: auto;
+}
+
+.p3 h4 {
+    opacity: 0;
+}
+
+.p3 h3 {
+    transition: 0.5s;
+    padding-top: 16%;
+}
+
+.p3:hover h3 {
+    transition: 1s;
+    padding-top: 10%;
+}
+
+.p3:hover h4 {
+    transition: 1.5%;
+    opacity: 1;
+    padding-top: 3%;
+}
+
+.p3:hover h4:hover a {
+    transition: 50ms;
+    color: #737373;
+}
+
+/* Fin - Projet 3 */
+
+/* Debut - Projet 4 */
+
+.p4 {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+
+.p4 a {
+    color: black;
+}
+
+.p4 p {
+    width: 80%;
+    margin: auto;
+}
+
+.p4 h3 {
+    transition: 0.5s;
+    padding-top: 16%;
+}
+
+.p4 h4 {
+    opacity: 0;
+}
+
+.p4:hover h3 {
+    transition: 1s;
+    padding-top: 10%
+}
+
+.p4:hover h4 {
+    transition: 1.5s;
+    opacity: 1;
+    padding-top: 3%;
+}
+
+.p4:hover h4:hover a {
+    transition: 50ms;
+    color: #737373;
+}
+
+/* Fin - Projet 4 */
+
+/* Fin - Ligne 1 */
+
+.l2 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.l2 h3 {
+    text-align: center;
+    width: 100%;
+    padding-top: 7%;
+}
+
+/* Debut - Contacter */
+
+.contacter {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contacter h5 {
+    padding-top: 1.5%;
+}
+
+.contacter a {
+    color: white;
+}
+
+.contacter a:hover {
+    color: #e6e6e6;
+}
+
+/* Fin - Contacter */
